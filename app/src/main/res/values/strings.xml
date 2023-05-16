@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sports Finder</string>
+    <string name="football">NFL</string>
+    <string name="basketball">NBA</string>
+    <string name="baseball">MLB</string>
+    <string name="hockey">NHL</string>
 </resources>

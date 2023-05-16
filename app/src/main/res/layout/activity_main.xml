@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textNFL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="@string/football"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textNBA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="@string/basketball"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textMLB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="@string/baseball"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textNHL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple"
+                android:gravity="center"
+                android:text="@string/hockey"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
