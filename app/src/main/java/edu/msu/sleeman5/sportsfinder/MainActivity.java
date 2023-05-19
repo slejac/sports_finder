@@ -20,6 +20,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Constants for Passing in Locational Data
+    public final static String CUR_LONGITUDE = "edu.msu.sleeman5.sportsfinder.longitude";
+    public final static String CUR_LATITUDE = "edu.msu.sleeman5.sportsfinder.latitude";
+
     private LocationManager locationManager = null;
 
     // Current Locational Information
@@ -111,21 +115,29 @@ public class MainActivity extends AppCompatActivity {
 
     public void onNFL(View view) {
         Intent intent = new Intent(this, NFLActivity.class);
+        intent.putExtra(CUR_LONGITUDE, longitude);
+        intent.putExtra(CUR_LATITUDE, latitude);
         startActivity(intent);
     }
 
     public void onNBA(View view) {
         Intent intent = new Intent(this, NBAActivity.class);
+        intent.putExtra(CUR_LONGITUDE, longitude);
+        intent.putExtra(CUR_LATITUDE, latitude);
         startActivity(intent);
     }
 
     public void onMLB(View view) {
         Intent intent = new Intent(this, MLBActivity.class);
+        intent.putExtra(CUR_LONGITUDE, longitude);
+        intent.putExtra(CUR_LATITUDE, latitude);
         startActivity(intent);
     }
 
     public void onNHL(View view) {
         Intent intent = new Intent(this, NHLActivity.class);
+        intent.putExtra(CUR_LONGITUDE, longitude);
+        intent.putExtra(CUR_LATITUDE, latitude);
         startActivity(intent);
     }
 
