@@ -5,7 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import java.util.List;
+import java.util.Map;
+
 public class NHLActivity extends AppCompatActivity {
+
+    // NHL Data Code
+    private static final int DATA_TYPE = 4;
+
+    // NHL Rinks
+    private static List<Map> rinks;
 
     private double userLongitude = 0;
     private double userLatitude = 0;
@@ -18,10 +27,8 @@ public class NHLActivity extends AppCompatActivity {
         Intent intent = getIntent();
         userLongitude = intent.getDoubleExtra(MainActivity.CUR_LONGITUDE, 0);
         userLatitude = intent.getDoubleExtra(MainActivity.CUR_LATITUDE, 0);
-    }
 
-    /*
-    Could likely use GeoCoding methods and addresses, but actual Latitudes/Longitudes are
-    well-documented quicker and easier to work with, can likely avoid using an extra thread as well
-     */
+        // Create List of Mappings for Each Arena
+        rinks = Populator.populate(rinks, DATA_TYPE);
+    }
 }
