@@ -17,16 +17,7 @@
         android:theme="@style/Theme.SportsFinder"
         tools:targetApi="31">
         <activity
-            android:name=".NHLActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MLBActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NBAActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NFLActivity"
+            android:name=".FinderActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

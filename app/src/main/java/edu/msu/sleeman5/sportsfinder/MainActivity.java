@@ -16,13 +16,15 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     // Constants for Passing in Locational Data
     public final static String CUR_LONGITUDE = "edu.msu.sleeman5.sportsfinder.longitude";
     public final static String CUR_LATITUDE = "edu.msu.sleeman5.sportsfinder.latitude";
+
+    // Constant for Storing which Sport
+    public final static String SPORT_DATA = "edu.msu.sleeman5.sportsfinder.type";
 
     private LocationManager locationManager = null;
 
@@ -114,30 +116,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onNFL(View view) {
-        Intent intent = new Intent(this, NFLActivity.class);
+        Intent intent = new Intent(this, FinderActivity.class);
         intent.putExtra(CUR_LONGITUDE, longitude);
         intent.putExtra(CUR_LATITUDE, latitude);
+        intent.putExtra(SPORT_DATA, 1);
         startActivity(intent);
     }
 
     public void onNBA(View view) {
-        Intent intent = new Intent(this, NBAActivity.class);
+        Intent intent = new Intent(this, FinderActivity.class);
         intent.putExtra(CUR_LONGITUDE, longitude);
         intent.putExtra(CUR_LATITUDE, latitude);
+        intent.putExtra(SPORT_DATA, 2);
         startActivity(intent);
     }
 
     public void onMLB(View view) {
-        Intent intent = new Intent(this, MLBActivity.class);
+        Intent intent = new Intent(this, FinderActivity.class);
         intent.putExtra(CUR_LONGITUDE, longitude);
         intent.putExtra(CUR_LATITUDE, latitude);
+        intent.putExtra(SPORT_DATA, 3);
         startActivity(intent);
     }
 
     public void onNHL(View view) {
-        Intent intent = new Intent(this, NHLActivity.class);
+        Intent intent = new Intent(this, FinderActivity.class);
         intent.putExtra(CUR_LONGITUDE, longitude);
         intent.putExtra(CUR_LATITUDE, latitude);
+        intent.putExtra(SPORT_DATA, 4);
         startActivity(intent);
     }
 
