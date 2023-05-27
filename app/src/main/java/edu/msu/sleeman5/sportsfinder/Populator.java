@@ -460,7 +460,223 @@ public class Populator {
             tempMap.put("latitude", "34.0430");
             tempMap.put("longitude", "-118.2673");
             data.add(tempMap);
+
         } else if (dataType == 3) {  // MLB
+            // AL East
+            HashMap tempMap = new HashMap();
+            tempMap.put("team", "New York Yankees");
+            tempMap.put("venue", "Yankee Stadium");
+            tempMap.put("latitude", "40.8296");
+            tempMap.put("longitude", "-73.9262");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Boston Red Sox");
+            tempMap.put("venue", "Fenway Park");
+            tempMap.put("latitude", "42.3467");
+            tempMap.put("longitude", "-71.0972");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Tampa Bay Rays");
+            tempMap.put("venue", "Tropicana Field");
+            tempMap.put("latitude", "27.7682");
+            tempMap.put("longitude", "-82.6534");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Toronto Blue Jays");
+            tempMap.put("venue", "Rogers Centre");
+            tempMap.put("latitude", "43.6418");
+            tempMap.put("longitude", "-79.3901");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Baltimore Orioles");
+            tempMap.put("venue", "Oriole Park at Camden Yards");
+            tempMap.put("latitude", "39.2838");
+            tempMap.put("longitude", "-76.6217");
+            data.add(tempMap);
+
+            // AL Central
+            tempMap = new HashMap();
+            tempMap.put("team", "Detroit Tigers");
+            tempMap.put("venue", "Comerica Park");
+            tempMap.put("latitude", "42.3390");
+            tempMap.put("longitude", "-83.0485");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Minnesota Twins");
+            tempMap.put("venue", "Target Field");
+            tempMap.put("latitude", "44.9817");
+            tempMap.put("longitude", "-93.2776");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Chicago White Sox");
+            tempMap.put("venue", "Guaranteed Rate Field");
+            tempMap.put("latitude", "41.8300");
+            tempMap.put("longitude", "-87.6339");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Cleveland Guardians");
+            tempMap.put("venue", "Progressive Field");
+            tempMap.put("latitude", "41.4908");
+            tempMap.put("longitude", "-81.6845");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Kansas City Royals");
+            tempMap.put("venue", "Kauffman Stadium");
+            tempMap.put("latitude", "39.0517");
+            tempMap.put("longitude", "-94.4803");
+            data.add(tempMap);
+
+            // AL West
+            tempMap = new HashMap();
+            tempMap.put("team", "Houston Astros");
+            tempMap.put("venue", "Minute Maid Park");
+            tempMap.put("latitude", "29.7572");
+            tempMap.put("longitude", "-95.3552");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Texas Rangers");
+            tempMap.put("venue", "Globe Life Field");
+            tempMap.put("latitude", "32.7475");
+            tempMap.put("longitude", "-97.0838");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Seattle Mariners");
+            tempMap.put("venue", "T-Mobile Park");
+            tempMap.put("latitude", "47.5913");
+            tempMap.put("longitude", "-122.3325");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Los Angeles Angels");
+            tempMap.put("venue", "Angel Stadium of Anaheim");
+            tempMap.put("latitude", "33.8003");
+            tempMap.put("longitude", "-117.8827");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Oakland Athletics");
+            tempMap.put("venue", "Oakland-Alameda County Coliseum");
+            tempMap.put("latitude", "37.7516");
+            tempMap.put("longitude", "-122.2005");
+            data.add(tempMap);
+
+            // NL East
+            tempMap = new HashMap();
+            tempMap.put("team", "Atlanta Braves");
+            tempMap.put("venue", "Truist Park");
+            tempMap.put("latitude", "33.8911");
+            tempMap.put("longitude", "-84.4684");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Miami Marlins");
+            tempMap.put("venue", "LoanDepot Park");
+            tempMap.put("latitude", "25.7781");
+            tempMap.put("longitude", "-80.2196");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "New York Mets");
+            tempMap.put("venue", "Citi Field");
+            tempMap.put("latitude", "40.7542");
+            tempMap.put("longitude", "-73.8408");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Philadelphia Phillies");
+            tempMap.put("venue", "Citizens Bank Park");
+            tempMap.put("latitude", "39.9035");
+            tempMap.put("longitude", "-75.1598");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Washington Nationals");
+            tempMap.put("venue", "Nationals Park");
+            tempMap.put("latitude", "38.8730");
+            tempMap.put("longitude", "-77.0074");
+            data.add(tempMap);
+
+            // AL Central
+            tempMap = new HashMap();
+            tempMap.put("team", "Chicago Cubs");
+            tempMap.put("venue", "Wrigley Field");
+            tempMap.put("latitude", "41.9484");
+            tempMap.put("longitude", "-87.6553");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Cincinnati Reds");
+            tempMap.put("venue", "Great American Ball Park");
+            tempMap.put("latitude", "39.0974");
+            tempMap.put("longitude", "-84.5071");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Milwaukee Brewers");
+            tempMap.put("venue", "American Family Field");
+            tempMap.put("latitude", "43.0280");
+            tempMap.put("longitude", "-87.9715");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Pittsburgh Pirates");
+            tempMap.put("venue", "PNC Park");
+            tempMap.put("latitude", "40.4475");
+            tempMap.put("longitude", "-80.0072");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "St. Louis Cardinals");
+            tempMap.put("venue", "Busch Stadium");
+            tempMap.put("latitude", "38.6226");
+            tempMap.put("longitude", "-90.1928");
+            data.add(tempMap);
+
+            // NL West
+            tempMap = new HashMap();
+            tempMap.put("team", "Arizona Diamondbacks");
+            tempMap.put("venue", "Chase Field");
+            tempMap.put("latitude", "33.4405");
+            tempMap.put("longitude", "-112.0668");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Colorado Rockies");
+            tempMap.put("venue", "Coors Field");
+            tempMap.put("latitude", "39.7559");
+            tempMap.put("longitude", "-104.9942");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "San Francisco Giants");
+            tempMap.put("venue", "Oracle Park");
+            tempMap.put("latitude", "37.7786");
+            tempMap.put("longitude", "-122.3893");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "Los Angeles Dodgers");
+            tempMap.put("venue", "Dodger Stadium");
+            tempMap.put("latitude", "34.0739");
+            tempMap.put("longitude", "-118.2400");
+            data.add(tempMap);
+
+            tempMap = new HashMap();
+            tempMap.put("team", "San Diego Padres");
+            tempMap.put("venue", "Petco Park");
+            tempMap.put("latitude", "32.7073");
+            tempMap.put("longitude", "-117.1566");
+            data.add(tempMap);
 
         } else if (dataType == 4) {  // NHL
 
