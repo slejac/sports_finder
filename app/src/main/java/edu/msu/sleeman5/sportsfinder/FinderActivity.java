@@ -42,11 +42,14 @@ public class FinderActivity extends AppCompatActivity {
             }
         }
 
+        // Convert to Miles
+        min = min * 0.000621371;
+
         TextView viewTeam = (TextView)findViewById(R.id.textTeam);
         viewTeam.setText(venues.get(index).get("team"));
         TextView viewVenue = (TextView)findViewById(R.id.textVenue);
         viewVenue.setText(venues.get(index).get("venue"));
         TextView viewDistance = (TextView)findViewById(R.id.textDistance);
-        viewDistance.setText(Double.toString(min));
+        viewDistance.setText(Integer.toString((int)min) + " miles");
     }
 }
