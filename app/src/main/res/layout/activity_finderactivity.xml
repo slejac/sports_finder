@@ -7,25 +7,25 @@
     tools:context=".FinderActivity">
 
     <TextView
-        android:id="@+id/team"
+        android:id="@+id/textTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/venue"
+        android:id="@+id/textVenue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/team"
+        android:layout_below="@id/textTeam"
         android:layout_centerHorizontal="true"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/distance"
+        android:id="@+id/textDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/venue"
+        android:layout_below="@id/textVenue"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="34sp" />
