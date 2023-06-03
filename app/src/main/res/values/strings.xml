@@ -4,4 +4,5 @@
     <string name="basketball">NBA</string>
     <string name="baseball">MLB</string>
     <string name="hockey">NHL</string>
+    <string name="button_txt">Directions</string>
 </resources>

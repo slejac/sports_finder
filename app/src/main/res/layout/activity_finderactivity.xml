@@ -29,4 +29,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textDirections"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textDistance"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:onClick="onDirections"
+        android:text="@string/button_txt"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
 </RelativeLayout>
